@@ -19,6 +19,8 @@ maxAPI.post('url:' + OUT_URL);
 
 
 request(options, (error, response, body)=> {
+maxAPI.post('error:', error);
+maxAPI.post('response:', response);
 maxAPI.outlet('body:', body);
 });
 
