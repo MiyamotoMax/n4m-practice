@@ -1,5 +1,5 @@
 const request = require('request');
-//const maxAPI = require("max-api");
+const maxAPI = require("max-api");
 const config = require('./user-config.json');//set apiKey
 
 const params = {
@@ -15,12 +15,11 @@ const options = {
   method: 'GET', 
   json: true
 }
-//maxAPI.post('url:' + OUT_URL);
+maxAPI.post('url:' + OUT_URL);
 
 
 request(options, (error, response, body)=> {
-  //maxAPI.outlet('body:', body);
-  console.log(body);
+maxAPI.outlet('body:', body);
 });
 
 
