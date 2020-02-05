@@ -3,7 +3,7 @@ const maxAPI = require("max-api");
 const config = require('./user-config.json');//set apiKey
 
 const params = {
-  "baseURL": "https://api.openweathermap.org/data/2.5/weather",
+  "baseURL": "http://api.nhk.or.jp/v2/pg/now/",
     "apiKey": config.apiKey, // your apiKey
     "location": "tokyo",
     "units": "metric"
